@@ -1,18 +1,18 @@
 # Function
 def apply_discount(prices):
-    prices_copy = prices
+    prices_copy = prices.copy()
     valor = 0
-    for price in range(len(prices_copy)):
+    for index in range(len(prices_copy)):
         #print(prices_copy[item])
-        valor = prices_copy[price]
-        rounded = f"{valor:.2f}"
-        if prices_copy[price] > 2.00:
+        #valor = prices_copy[price]
+        #rounded = f"{valor:.2f}"
+        if prices_copy[index] > 2.00:
             #print(prices_copy[item] * 0.9)
-            valor = prices_copy[price] * 0.90
-            rounded = f"{valor:.2f}"
-            prices_copy[price] = rounded
+            valor = prices_copy[index] * 0.90
+            #rounded = f"{valor:.2f}"
+            prices_copy[index] = valor
         
-        prices_copy[price] = rounded
+        #prices_copy[price] = rounded
     
     return prices_copy
         
