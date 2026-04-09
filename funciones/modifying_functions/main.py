@@ -10,7 +10,6 @@ def calculate_total(price, discount=0.05, tax=0.07):
     app_dis = apply_discount(price, discount)
     total_price_default = apply_tax(app_dis, tax)
     return total_price_default 
-    #print(total_price_default)
 
 ct = calculate_total(120)
 print(f"Total cost with default discount and tax: ${ct:.2f}")
